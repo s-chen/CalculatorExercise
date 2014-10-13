@@ -11,7 +11,7 @@ public class Calculator {
 			return single_number;
 		} else {
 			result = Double.parseDouble(String.valueOf(expression.charAt(0)));
-			for (int i=1; i <= expression.length(); i++) {
+			for (int i=1; i < expression.length(); i++) {
 				if (String.valueOf(expression.charAt(i)) == "+") {
 					result += Double.valueOf(expression.charAt(i+1));
 				}
